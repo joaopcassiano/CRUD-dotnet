@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D1AFE1B-9757-4A0E-A0E0-9BC01AA7BB41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projeto2024</RootNamespace>
+    <AssemblyName>Projeto2024</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categoria.cs" />
+    <Compile Include="Conexao.cs" />
+    <Compile Include="FrmAlterarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCategoria.Designer.cs">
+      <DependentUpon>FrmAlterarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlterarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarProduto.Designer.cs">
+      <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExcluirCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExcluirCategoria.Designer.cs">
+      <DependentUpon>FrmExcluirCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExcluirProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExcluirProduto.Designer.cs">
+      <DependentUpon>FrmExcluirProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImprimir.Designer.cs">
+      <DependentUpon>FrmImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIncluirCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIncluirCategoria.Designer.cs">
+      <DependentUpon>FrmIncluirCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIncluirProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIncluirProduto.Designer.cs">
+      <DependentUpon>FrmIncluirProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesquisaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesquisaCategoria.Designer.cs">
+      <DependentUpon>FrmPesquisaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesquisaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesquisaProduto.Designer.cs">
+      <DependentUpon>FrmPesquisaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAlterarCategoria.resx">
+      <DependentUpon>FrmAlterarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarProduto.resx">
+      <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExcluirCategoria.resx">
+      <DependentUpon>FrmExcluirCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExcluirProduto.resx">
+      <DependentUpon>FrmExcluirProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImprimir.resx">
+      <DependentUpon>FrmImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIncluirCategoria.resx">
+      <DependentUpon>FrmIncluirCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIncluirProduto.resx">
+      <DependentUpon>FrmIncluirProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesquisaCategoria.resx">
+      <DependentUpon>FrmPesquisaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesquisaProduto.resx">
+      <DependentUpon>FrmPesquisaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
